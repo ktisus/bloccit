@@ -1,11 +1,13 @@
 {
   "name": "bloccit",
   "version": "1.0.0",
+  "private": true,
   "description": "A Reddit-like application for users to discuss and share content",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "export NODE_ENV=test&& jasmine",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "sequelize": "sequelize"
   },
   "author": "kts",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "mysql2": "^1.7.0",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.44.3"
+    "sequelize": "^4.44.3",
+    "sequelize-cli": "^5.5.1"
   }
 }
